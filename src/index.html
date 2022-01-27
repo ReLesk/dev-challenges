@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive - Not found UX</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            fontFamily: {
+                  sans: ['Poppins', 'sans-serif']
+              },
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+    </script>
+</head>
+<body>
+    <header class="bg-white">
+        <nav class="block md:flex py-10 px-5 md:px-20">
+            <div class="container flex justify-between">
+                <a class="text-xl font-black" href="#">Not found</a>
+                <button>
+                    <ion-icon size="large" name="menu-outline"></ion-icon>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mx-auto p-10">
+        <div class="flex justify-center items-center flex-col text-center md:text-left md:flex-row">
+            <img src="/src/img/Scarecrow.png" class="w-2/6" alt="">
+            <div class="card mx-10">
+                <h2 class="text-6xl max-w-md font-black py-2 mb-4">I have bad news for you</h2>
+                <p class="text-xl text-zinc-700 max-w-sm py-2 mb-4">The page you are loading for might be removed or is temporally unavailable</p>
+                <a class="transition ease-in-out delay-150 bg-zinc-700 hover:bg-indigo-500 duration-300 text-white font-medium text-xl py-2 px-10 mb-4 rounded-md" href="https://indentado.xyz">Back</a>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+</body>
+</html>
